@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:richbrewz/src/router/routing.dart';
+import 'package:richbrewz/src/theme/coffee.dart';
 
 class RoutedApp extends StatelessWidget {
   const RoutedApp({super.key, this.initialRoute, this.isTestMode = false});
@@ -15,16 +17,17 @@ class RoutedApp extends StatelessWidget {
       routerConfig: router,
       // onGenerateTitle: (BuildContext context) => 'Saitenstecher'.hardcoded,
       theme: ThemeData(
-        primarySwatch: Colors.grey,
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.black87,
-          foregroundColor: Colors.white,
+        primarySwatch: coffee,
+        fontFamily: GoogleFonts.quicksand().fontFamily,
+        appBarTheme: AppBarTheme(
+          backgroundColor: coffee.shade900,
+          foregroundColor: coffee.shade100,
           elevation: 0,
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.black,
-            foregroundColor: Colors.white,
+            backgroundColor: coffee.shade900,
+            foregroundColor: coffee.shade100,
           ),
         ),
       ),
