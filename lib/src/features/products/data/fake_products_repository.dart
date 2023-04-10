@@ -1,9 +1,9 @@
 import 'package:richbrewz/src/constants/test_products.dart';
 import 'package:richbrewz/src/features/products/models/products.dart';
 
-class FakeMemberRepository {
-  FakeMemberRepository._();
-  static FakeMemberRepository instance = FakeMemberRepository._();
+class FakeProductsRepository {
+  FakeProductsRepository._();
+  static FakeProductsRepository instance = FakeProductsRepository._();
 
   List<Product> getProducts() {
     return kProducts;
