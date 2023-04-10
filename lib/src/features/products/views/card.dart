@@ -19,8 +19,10 @@ class ProductCard extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // CustomImage(imageUrl: product.imageUrl),
-              // const Placeholder(),
+              CircleAvatar(
+                radius: 128,
+                backgroundImage: AssetImage('images/${product.imageUrl}'),
+              ),
               gapH8,
               const Divider(),
               gapH8,

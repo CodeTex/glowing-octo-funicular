@@ -5,7 +5,7 @@ typedef ProductID = String;
 class Product {
   final ProductID id = const Uuid().v1();
   final String title;
-  final String? imageUrl;
+  final String imageUrl;
   String? description;
 
   Product({

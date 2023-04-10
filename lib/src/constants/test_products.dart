@@ -3,26 +3,26 @@ import 'package:richbrewz/src/features/products/models/products.dart';
 final kProducts = [
   Product(
     title: "Espresso",
-    imageUrl: null,
+    imageUrl: "espresso_cropped.png",
   ),
   Product(
     title: "Doppio",
-    imageUrl: null,
+    imageUrl: "doppio.png",
   ),
   Product(
     title: "Ristretto",
-    imageUrl: null,
+    imageUrl: "ristretto_cropped.png",
   ),
   Product(
     title: "Cortado",
-    imageUrl: null,
+    imageUrl: "cortado_cropped.png",
   ),
   Product(
     title: "Lungo",
-    imageUrl: null,
+    imageUrl: "lungo_cropped.png",
   ),
   Product(
     title: "Cappuccino",
-    imageUrl: null,
+    imageUrl: "cappuccino_cropped.png",
   )
 ];
